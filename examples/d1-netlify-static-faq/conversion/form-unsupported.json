@@ -1,0 +1,16 @@
+{
+  "source": "fixture",
+  "handler": "unsupported",
+  "reason": "Netlify Forms are declared in HTML. cfmt convert reads redirect and header rules and has no Workers Static Assets equivalent for a form handler.",
+  "alternative": "stub",
+  "forms": [
+    {
+      "name": "sample-question",
+      "page": "/index.html",
+      "action": "/form-stub",
+      "method": "POST",
+      "storesSubmission": false
+    }
+  ],
+  "stub": "GET /form-stub is a static page. The local Netlify-style simulator accepts a submission and discards the body. Workers Static Assets do not run the Netlify form handler."
+}

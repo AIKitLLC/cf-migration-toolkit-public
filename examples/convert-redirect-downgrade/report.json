@@ -1,0 +1,27 @@
+{
+  "summary": {
+    "source": "fixture",
+    "writtenRedirects": 1,
+    "unsupported": 0,
+    "writtenHeaderRules": 0,
+    "staticRedirects": 0,
+    "dynamicRedirects": 1,
+    "ok": true
+  },
+  "redirects": [
+    {
+      "file": "examples/convert-redirect-downgrade/input/_redirects",
+      "line": 1,
+      "from": "/old-blog/*",
+      "to": "/blog/:splat",
+      "status": 301,
+      "statusOrigin": "netlify-default",
+      "output": "/old-blog/* /blog/:splat 301",
+      "dynamic": true,
+      "caveat": "This rule is not forced. Netlify skips an unforced rule when a file already exists, and Vercel applies rewrites after the filesystem. Cloudflare _redirects always applies the rule, even when an asset exists."
+    }
+  ],
+  "unsupported": [],
+  "headers": [],
+  "error": null
+}

@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "source": "fixture",
+    "oldOrigin": "http://127.0.0.1:41731",
+    "newOrigin": "http://127.0.0.1:41732",
+    "urlCount": 1,
+    "counts": {
+      "error": 1,
+      "warning": 1,
+      "info": 0
+    },
+    "byCheck": {
+      "redirect-status-changed": 1,
+      "status-changed": 1
+    }
+  },
+  "findings": [
+    {
+      "path": "/old-blog/sample",
+      "check": "redirect-status-changed",
+      "severity": "error",
+      "old": "301",
+      "new": "302"
+    },
+    {
+      "path": "/old-blog/sample",
+      "check": "status-changed",
+      "severity": "warning",
+      "old": "301",
+      "new": "302"
+    }
+  ]
+}

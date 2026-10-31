@@ -1,0 +1,24 @@
+<form
+  name="sample-question"
+  method="POST"
+  action="/form-stub"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="sample-question" />
+  <p class="honeypot">
+    <label>
+      Leave this empty
+      <input name="bot-field" />
+    </label>
+  </p>
+  <p>
+    <label for="sample-note">Sample note</label>
+    <textarea id="sample-note" name="note" rows="4"></textarea>
+  </p>
+  <p class="form-note">
+    Do not enter a name, an email address, or any other personal information. This sample form does not
+    store a message.
+  </p>
+  <button type="submit">Send sample note</button>
+</form>

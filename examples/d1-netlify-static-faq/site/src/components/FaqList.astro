@@ -1,0 +1,52 @@
+---
+import { faqEntries } from '../data/faq-entries';
+import { ACCESS_DATE, DISCLAIMER, visibleAnswer } from '../lib/visible-answer';
+import QuoteBlockView from './QuoteBlockView.astro';
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqEntries.map((entry) => ({
+    '@type': 'Question',
+    name: entry.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: visibleAnswer(entry),
+    },
+  })),
+});
+---
+
+<ol class="faq-list">
+  {
+    faqEntries.map((entry) => (
+      <li>
+        <article id={entry.id} data-faq-question>
+          <h2 data-faq-q>{entry.question}</h2>
+          <div data-faq-a>
+            {entry.quotations.map((quotation, quotationIndex) => (
+              <>
+                {quotationIndex > 0 ? ' ' : null}
+                <blockquote>
+                  {quotation.blocks.map((block, blockIndex) => (
+                    <>
+                      {blockIndex > 0 ? ' ' : null}
+                      <QuoteBlockView block={block} />
+                    </>
+                  ))}
+                </blockquote>
+                {' '}
+                <p class="citation">
+                  Source: {quotation.sourceUrl}. Accessed {ACCESS_DATE}.
+                </p>
+              </>
+            ))}
+            {' '}
+            <p class="disclaimer">{DISCLAIMER}</p>
+          </div>
+        </article>
+      </li>
+    ))
+  }
+</ol>
+<script type="application/ld+json" is:inline set:html={jsonLd} />

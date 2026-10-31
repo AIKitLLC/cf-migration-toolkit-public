@@ -1,0 +1,59 @@
+---
+import type { QuoteBlock } from '../lib/visible-answer';
+
+interface Props {
+  block: QuoteBlock;
+}
+
+const { block } = Astro.props;
+---
+
+{block.kind === 'paragraph' && <p>{block.text}</p>}
+{
+  block.kind === 'items' && (
+    <>
+      {block.intro ? <p>{block.intro}</p> : null}
+      {block.intro ? ' ' : null}
+      <ul>
+        {block.items.map((item, index) => (
+          <>
+            {index > 0 ? ' ' : null}
+            <li>{item}</li>
+          </>
+        ))}
+      </ul>
+    </>
+  )
+}
+{
+  block.kind === 'table' && (
+    <table>
+      <thead>
+        <tr>
+          {block.rows[0]?.map((cell, index) => (
+            <>
+              {index > 0 ? ' ' : null}
+              <th scope="col">{cell}</th>
+            </>
+          ))}
+        </tr>
+      </thead>
+      {block.rows.length > 1 ? ' ' : null}
+      <tbody>
+        {block.rows.slice(1).map((row, rowIndex) => (
+          <>
+            {rowIndex > 0 ? ' ' : null}
+            <tr>
+              {row.map((cell, index) => (
+                <>
+                  {index > 0 ? ' ' : null}
+                  <td>{cell}</td>
+                </>
+              ))}
+            </tr>
+          </>
+        ))}
+      </tbody>
+    </table>
+  )
+}

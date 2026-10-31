@@ -1,0 +1,35 @@
+---
+import '../styles/site.css';
+import DemoBanner from '../components/DemoBanner.astro';
+import GlossaryLinks from '../components/GlossaryLinks.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+
+interface Props {
+  title: string;
+  path: string;
+  description: string;
+}
+
+const { title, path, description } = Astro.props;
+const canonical = new URL(path, 'https://plinthwick-sample.example').toString();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <DemoBanner />
+    <SiteHeader />
+    <GlossaryLinks />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

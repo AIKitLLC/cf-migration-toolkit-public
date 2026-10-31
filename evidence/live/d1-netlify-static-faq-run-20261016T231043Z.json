@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-16",
+  "commit": "76698e6c32240c8ba56f2412ec651e38c62e7893",
+  "mergedSha": "76698e6c32240c8ba56f2412ec651e38c62e7893",
+  "workersDevOrigin": "https://d1-netlify-static-faq.<subdomain>.workers.dev",
+  "verifyCommand": null,
+  "smokeCfRay": "a4babd409d39f497-SJC",
+  "homepageCfRay": "a4babd3e7fc1eb39-SEA",
+  "invokePath": "/__cfmt-invoke",
+  "homepageInTail": false,
+  "staticAssetInvocationLog": "warn-if-missing",
+  "tailEvent": "evidence/live/d1-tail-event-20261016T231043Z.json",
+  "tailLog": "gitignored",
+  "marker": "/__version.txt",
+  "v1VersionId": "f7eaaf77-1d69-41ac-b915-0f6987bb515b",
+  "v2VersionId": "1eb9271f-e734-4a5c-919a-5b8feff1e5af",
+  "rollback": {
+    "elapsedMs": 2363.670,
+    "method": "wrangler rollback",
+    "replaces": "simulated-local"
+  },
+  "rto": {
+    "samplesMs": [2363.670, 2194.162, 2489.879],
+    "medianMs": 2363.670,
+    "elapsedMs": 2363.670,
+    "measuredBy": "maintainer",
+    "from": "wrangler rollback",
+    "until": "curl returns the previous version",
+    "log": "evidence/live/d1-rto-20261016T231043Z.log"
+  }
+}

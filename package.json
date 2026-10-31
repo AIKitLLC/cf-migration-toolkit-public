@@ -1,0 +1,54 @@
+{
+  "name": "cf-migration-toolkit",
+  "version": "0.2.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Parity verifier and redirect converter for sites moving onto Cloudflare.",
+  "type": "module",
+  "bin": {
+    "cfmt": "./dist/cli/main.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "packageManager": "pnpm@10.33.3",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.typecheck.json",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "cfmt": "tsx src/cli/main.ts",
+    "generate:evidence": "tsx scripts/generate-redirect-downgrade-evidence.ts && tsx scripts/generate-convert-redirect-downgrade-evidence.ts",
+    "build:d1": "tsx scripts/d1/prepare-assets.ts",
+    "verify:d1": "tsx scripts/d1/verify-parity.ts",
+    "rollback:d1": "tsx scripts/d1/measure-rollback.ts",
+    "build:netlify-fixture": "tsx scripts/d1/build-netlify-fixture.ts"
+  },
+  "dependencies": {
+    "ipaddr.js": "2.5.0",
+    "node-html-parser": "9.0.4",
+    "undici": "7.30.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "workerd"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "22.20.5",
+    "eslint": "10.12.0",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.1",
+    "vitest": "5.0.3",
+    "wrangler": "4.151.0"
+  }
+}

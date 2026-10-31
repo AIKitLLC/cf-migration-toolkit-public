@@ -1,0 +1,7 @@
+# security
+/secure/page
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+
+/static/*
+  Cache-Control: public, max-age=60

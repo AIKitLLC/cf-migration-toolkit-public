@@ -1,0 +1,169 @@
+:root {
+  color: #1c1915;
+  background: #f3ecdf;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem 1rem 3rem;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+a {
+  color: #1f4d3a;
+}
+
+.demo-banner {
+  margin: 0 auto 1rem;
+  max-width: 40rem;
+  padding: 0.75rem 1rem;
+  background: #1c1915;
+  color: #f3ecdf;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.site-header,
+.glossary {
+  max-width: 40rem;
+  margin: 0 auto 1rem;
+}
+
+.brand {
+  margin: 0;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+nav a {
+  color: #1c1915;
+}
+
+.glossary {
+  display: grid;
+  gap: 0.35rem 1rem;
+  margin: 0 auto 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid #c4b8a5;
+  border-bottom: 1px solid #c4b8a5;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+}
+
+.glossary div {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 0.5rem;
+}
+
+.glossary dt,
+.glossary dd {
+  margin: 0;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+  font-weight: 650;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-list > li {
+  margin: 0 0 2rem;
+  padding-top: 0.5rem;
+  border-top: 3px solid #1f4d3a;
+}
+
+blockquote {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #c4b8a5;
+}
+
+.citation,
+.disclaimer,
+.form-note {
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+}
+
+.disclaimer {
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 0.4rem 0.5rem 0.4rem 0;
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px solid #c4b8a5;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+textarea {
+  width: 100%;
+  font: inherit;
+  padding: 0.5rem;
+  background: #fffdf8;
+  border: 1px solid #1c1915;
+}
+
+button {
+  font: inherit;
+  padding: 0.6rem 1rem;
+  background: #1f4d3a;
+  color: #f3ecdf;
+  border: 0;
+}
+
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media (max-width: 420px) {
+  body {
+    padding-inline: 0.85rem;
+  }
+
+  .glossary div {
+    grid-template-columns: 3.5rem 1fr;
+  }
+}

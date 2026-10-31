@@ -1,0 +1,16 @@
+---
+import { glossary } from '../data/glossary';
+---
+
+<dl class="glossary">
+  {
+    glossary.map((term) => (
+      <div>
+        <dt>
+          <a href={term.href}>{term.token}</a>
+        </dt>
+        <dd>means {term.expansion}.</dd>
+      </div>
+    ))
+  }
+</dl>

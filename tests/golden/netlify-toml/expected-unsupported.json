@@ -1,0 +1,17 @@
+[
+  {
+    "from": "/search",
+    "reasons": ["external-proxy"],
+    "alternative": "worker"
+  },
+  {
+    "from": "/shop",
+    "reasons": ["query-parameters"],
+    "alternative": "redirect-rules"
+  },
+  {
+    "from": "https://old.example.com/*",
+    "reasons": ["domain-level", "country-or-language"],
+    "alternative": "redirect-rules"
+  }
+]

@@ -1,0 +1,10 @@
+/old-blog/* /blog/:splat
+/home / 302
+/old /new 301!
+/store id=:id /blog/:id 301
+/ /us 302 Country=us
+/admin/* /admin/:splat 200! Role=admin
+https://old.example.com/* https://new.example.com/:splat 301
+/blog/* /blog/404.html 404
+/api/* https://api.example.com/:splat 200
+/app/* /index.html 200

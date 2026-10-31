@@ -1,0 +1,40 @@
+[[redirects]]
+  from = "/old-blog/*"
+  to = "/blog/:splat"
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/search"
+  to = "https://api.example.com"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/docs/*"
+  to = "/files/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/shop"
+  to = "/item/:id"
+  status = 301
+  query = {id = ":id"}
+
+[[redirects]]
+  from = "https://old.example.com/*"
+  to = "https://new.example.com/:splat"
+  conditions = {Language = ["en"], Country = ["US"]}
+
+[[headers]]
+  for = "/secure/page"
+  [headers.values]
+    X-Frame-Options = "DENY"
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=60"

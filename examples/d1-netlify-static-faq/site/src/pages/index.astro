@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SampleForm from '../components/SampleForm.astro';
+---
+
+<BaseLayout
+  title="Plinthwick Sample Desk"
+  path="/"
+  description="A fictional sample desk with quoted questions about employer identification numbers and estimated tax."
+>
+  <h1>Plinthwick Sample Desk</h1>
+  <p>
+    This fictional product is a sample FAQ about an EIN and estimated tax for a small LLC. Each answer
+    quotes the IRS. Dates and dollar amounts stay in the IRS wording. The page is information, not tax
+    advice.
+  </p>
+  <p><a href="/faq">Read the ten questions</a></p>
+  <h2>Sample form</h2>
+  <SampleForm />
+</BaseLayout>

@@ -1,0 +1,93 @@
+{
+  "source": "fixture",
+  "rows": [
+    {
+      "path": "/",
+      "oldStatus": 200,
+      "newStatus": 200,
+      "sameBody": true,
+      "oldSha256": "50907b28ae7e2f8c47a09762e6da8eb08b5841c5d2ea3d68304338355d451b3e",
+      "newSha256": "50907b28ae7e2f8c47a09762e6da8eb08b5841c5d2ea3d68304338355d451b3e"
+    },
+    {
+      "path": "/faq",
+      "oldStatus": 200,
+      "newStatus": 200,
+      "sameBody": true,
+      "oldSha256": "d7b95851d632c935ac5e31fa87397109228dc95040870c6b4132098a374b4659",
+      "newSha256": "d7b95851d632c935ac5e31fa87397109228dc95040870c6b4132098a374b4659"
+    },
+    {
+      "path": "/form-stub",
+      "oldStatus": 200,
+      "newStatus": 200,
+      "sameBody": true,
+      "oldSha256": "4e3cc19c435b1b4671d13328c33c0429f84b39889645021b2b2e61f3710ea3d8",
+      "newSha256": "4e3cc19c435b1b4671d13328c33c0429f84b39889645021b2b2e61f3710ea3d8"
+    },
+    {
+      "path": "/ein",
+      "oldStatus": 301,
+      "newStatus": 301,
+      "sameBody": true,
+      "oldSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/apply-for-ein",
+      "oldStatus": 302,
+      "newStatus": 302,
+      "sameBody": true,
+      "oldSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/estimated-tax-dates",
+      "oldStatus": 301,
+      "newStatus": 301,
+      "sameBody": true,
+      "oldSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/library/sample",
+      "oldStatus": 301,
+      "newStatus": 301,
+      "sameBody": true,
+      "oldSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/llc-ein",
+      "oldStatus": 200,
+      "newStatus": 200,
+      "sameBody": true,
+      "oldSha256": "d7b95851d632c935ac5e31fa87397109228dc95040870c6b4132098a374b4659",
+      "newSha256": "d7b95851d632c935ac5e31fa87397109228dc95040870c6b4132098a374b4659"
+    },
+    {
+      "path": "/favicon.svg",
+      "oldStatus": 200,
+      "newStatus": 200,
+      "sameBody": true,
+      "oldSha256": "66ef96ece2996dc36cac5567c8b450ca949930f7d272bcc4cae38d547bece2c7",
+      "newSha256": "66ef96ece2996dc36cac5567c8b450ca949930f7d272bcc4cae38d547bece2c7"
+    },
+    {
+      "path": "/robots.txt",
+      "oldStatus": 200,
+      "newStatus": 200,
+      "sameBody": true,
+      "oldSha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+      "newSha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+    },
+    {
+      "path": "/sitemap.xml",
+      "oldStatus": 200,
+      "newStatus": 200,
+      "sameBody": true,
+      "oldSha256": "3c300eaa6c473bc5a2beaa56ca876c400eb1c49182b8199a6c88e76bdf84f50e",
+      "newSha256": "3c300eaa6c473bc5a2beaa56ca876c400eb1c49182b8199a6c88e76bdf84f50e"
+    }
+  ]
+}

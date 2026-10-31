@@ -1,0 +1,3 @@
+# Raw `wrangler tail --format json` includes cf-connecting-ip.
+# Commit d1-tail-event-*.json instead. That file has rayId, outcome, timestamp, and path.
+d1-tail-*.log

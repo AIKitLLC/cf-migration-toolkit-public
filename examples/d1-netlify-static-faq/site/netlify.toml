@@ -1,0 +1,43 @@
+# Netlify-style source for the D1 fixture. The local simulator applies this file.
+# There is no Netlify account and this file is not deployed to Netlify.
+
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/ein"
+  to = "/faq"
+  status = 301
+
+[[redirects]]
+  from = "/apply-for-ein"
+  to = "/faq"
+  status = 302
+
+# Omitted status. Netlify's default is 301. cfmt convert must write 301, not leave Cloudflare's 302.
+[[redirects]]
+  from = "/estimated-tax-dates"
+  to = "/faq"
+
+[[redirects]]
+  from = "/library/*"
+  to = "/faq"
+  status = 301
+
+[[redirects]]
+  from = "/llc-ein"
+  to = "/faq"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    # preload is omitted. workers.dev is a public suffix, so the token does nothing there, and on a custom domain it is a preload-list commitment.
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Content-Security-Policy = "default-src 'self'; style-src 'self'; img-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"
+    X-Robots-Tag = "noindex"
+    Cache-Control = "public, max-age=0, must-revalidate"

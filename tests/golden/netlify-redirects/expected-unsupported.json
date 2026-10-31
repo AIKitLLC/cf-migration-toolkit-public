@@ -1,0 +1,32 @@
+[
+  {
+    "from": "/store",
+    "reasons": ["query-parameters"],
+    "alternative": "redirect-rules"
+  },
+  {
+    "from": "/",
+    "reasons": ["country-or-language"],
+    "alternative": "redirect-rules"
+  },
+  {
+    "from": "/admin/*",
+    "reasons": ["role"],
+    "alternative": "worker"
+  },
+  {
+    "from": "https://old.example.com/*",
+    "reasons": ["domain-level"],
+    "alternative": "bulk-redirects"
+  },
+  {
+    "from": "/blog/*",
+    "reasons": ["unsupported-status"],
+    "alternative": "worker"
+  },
+  {
+    "from": "/api/*",
+    "reasons": ["external-proxy"],
+    "alternative": "worker"
+  }
+]

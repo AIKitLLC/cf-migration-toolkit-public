@@ -1,0 +1,86 @@
+{
+  "summary": {
+    "source": "fixture",
+    "writtenRedirects": 5,
+    "unsupported": 0,
+    "writtenHeaderRules": 1,
+    "staticRedirects": 4,
+    "dynamicRedirects": 1,
+    "ok": true
+  },
+  "redirects": [
+    {
+      "file": "examples/d1-netlify-static-faq/site/netlify.toml",
+      "line": 8,
+      "from": "/ein",
+      "to": "/faq",
+      "status": 301,
+      "statusOrigin": "explicit",
+      "output": "/ein /faq 301",
+      "dynamic": false,
+      "caveat": "This rule is not forced. Netlify skips an unforced rule when a file already exists, and Vercel applies rewrites after the filesystem. Cloudflare _redirects always applies the rule, even when an asset exists."
+    },
+    {
+      "file": "examples/d1-netlify-static-faq/site/netlify.toml",
+      "line": 13,
+      "from": "/apply-for-ein",
+      "to": "/faq",
+      "status": 302,
+      "statusOrigin": "explicit",
+      "output": "/apply-for-ein /faq 302",
+      "dynamic": false,
+      "caveat": "This rule is not forced. Netlify skips an unforced rule when a file already exists, and Vercel applies rewrites after the filesystem. Cloudflare _redirects always applies the rule, even when an asset exists."
+    },
+    {
+      "file": "examples/d1-netlify-static-faq/site/netlify.toml",
+      "line": 19,
+      "from": "/estimated-tax-dates",
+      "to": "/faq",
+      "status": 301,
+      "statusOrigin": "netlify-default",
+      "output": "/estimated-tax-dates /faq 301",
+      "dynamic": false,
+      "caveat": "This rule is not forced. Netlify skips an unforced rule when a file already exists, and Vercel applies rewrites after the filesystem. Cloudflare _redirects always applies the rule, even when an asset exists."
+    },
+    {
+      "file": "examples/d1-netlify-static-faq/site/netlify.toml",
+      "line": 28,
+      "from": "/llc-ein",
+      "to": "/faq",
+      "status": 200,
+      "statusOrigin": "explicit",
+      "output": "/llc-ein /faq 200",
+      "dynamic": false,
+      "caveat": "This rule is not forced. Netlify skips an unforced rule when a file already exists, and Vercel applies rewrites after the filesystem. Cloudflare _redirects always applies the rule, even when an asset exists."
+    },
+    {
+      "file": "examples/d1-netlify-static-faq/site/netlify.toml",
+      "line": 23,
+      "from": "/library/*",
+      "to": "/faq",
+      "status": 301,
+      "statusOrigin": "explicit",
+      "output": "/library/* /faq 301",
+      "dynamic": true,
+      "caveat": "This rule is not forced. Netlify skips an unforced rule when a file already exists, and Vercel applies rewrites after the filesystem. Cloudflare _redirects always applies the rule, even when an asset exists."
+    }
+  ],
+  "unsupported": [],
+  "headers": [
+    {
+      "file": "examples/d1-netlify-static-faq/site/netlify.toml",
+      "line": 33,
+      "path": "/*",
+      "lines": [
+        "  X-Frame-Options: DENY",
+        "  X-Content-Type-Options: nosniff",
+        "  Referrer-Policy: no-referrer",
+        "  Strict-Transport-Security: max-age=31536000; includeSubDomains",
+        "  Content-Security-Policy: default-src 'self'; style-src 'self'; img-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'",
+        "  X-Robots-Tag: noindex",
+        "  Cache-Control: public, max-age=0, must-revalidate"
+      ]
+    }
+  ],
+  "error": null
+}

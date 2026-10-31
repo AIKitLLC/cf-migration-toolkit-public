@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    { "source": "/old-blog/:path*", "destination": "/blog/:path*" },
+    { "source": "/temp", "destination": "/new", "permanent": false },
+    { "source": "/legacy", "destination": "/new", "statusCode": 301 },
+    { "source": "/both", "destination": "/new", "permanent": false, "statusCode": 301 },
+    {
+      "source": "/:path((?!uk/).*)",
+      "has": [{ "type": "header", "key": "x-vercel-ip-country", "value": "GB" }],
+      "destination": "/uk/:path*",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    { "source": "/app/:path*", "destination": "/index.html" },
+    { "source": "/api/:path*", "destination": "https://api.example.com/:path*" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [{ "key": "X-Frame-Options", "value": "DENY" }]
+    }
+  ],
+  "trailingSlash": true,
+  "cleanUrls": true
+}

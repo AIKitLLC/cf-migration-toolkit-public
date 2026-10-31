@@ -1,0 +1,22 @@
+[
+  {
+    "from": "/:path((?!uk/).*)",
+    "reasons": ["has-or-missing", "pattern"],
+    "alternative": "worker"
+  },
+  {
+    "from": "/api/:path*",
+    "reasons": ["external-proxy"],
+    "alternative": "worker"
+  },
+  {
+    "from": "trailing-slash",
+    "reasons": ["trailing-slash"],
+    "alternative": "worker"
+  },
+  {
+    "from": "clean-urls",
+    "reasons": ["clean-urls"],
+    "alternative": "worker"
+  }
+]

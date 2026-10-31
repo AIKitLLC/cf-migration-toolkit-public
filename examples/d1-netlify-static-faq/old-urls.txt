@@ -1,0 +1,6 @@
+# Legacy paths from the Netlify-style source. One path per line.
+/ein
+/apply-for-ein
+/estimated-tax-dates
+/library/sample
+/llc-ein

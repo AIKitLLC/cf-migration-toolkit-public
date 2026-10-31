@@ -1,0 +1,243 @@
+{
+  "summary": {
+    "source": "live",
+    "evidence": "E2",
+    "oldOrigin": "https://<site>.netlify.app",
+    "newOrigin": "https://d1-netlify-static-faq.<subdomain>.workers.dev",
+    "urlCount": 8,
+    "counts": {
+      "error": 2,
+      "warning": 30
+    },
+    "byCheck": {
+      "header-changed": 20,
+      "header-missing": 12
+    }
+  },
+  "findings": [
+    {
+      "path": "/ein",
+      "check": "header-missing",
+      "severity": "error",
+      "old": "x-robots-tag: (missing)",
+      "new": "x-robots-tag: noindex"
+    },
+    {
+      "path": "/library/sample",
+      "check": "header-missing",
+      "severity": "error",
+      "old": "x-robots-tag: (missing)",
+      "new": "x-robots-tag: noindex"
+    },
+    {
+      "path": "/",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "content-type: text/html; charset=UTF-8",
+      "new": "content-type: text/html"
+    },
+    {
+      "path": "/",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/apply-for-ein",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "final content-type: text/html; charset=UTF-8",
+      "new": "final content-type: text/html"
+    },
+    {
+      "path": "/apply-for-ein",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "final strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "final strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/apply-for-ein",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/ein",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "final content-type: text/html; charset=UTF-8",
+      "new": "final content-type: text/html"
+    },
+    {
+      "path": "/ein",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "final strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "final strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/ein",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/estimated-tax-dates",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "final content-type: text/html; charset=UTF-8",
+      "new": "final content-type: text/html"
+    },
+    {
+      "path": "/estimated-tax-dates",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "final strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "final strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/estimated-tax-dates",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/faq",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "content-type: text/html; charset=UTF-8",
+      "new": "content-type: text/html"
+    },
+    {
+      "path": "/faq",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/form-stub",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "content-type: text/html; charset=UTF-8",
+      "new": "content-type: text/html"
+    },
+    {
+      "path": "/form-stub",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/library/sample",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "final content-type: text/html; charset=UTF-8",
+      "new": "final content-type: text/html"
+    },
+    {
+      "path": "/library/sample",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "final strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "final strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/library/sample",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/llc-ein",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "content-type: text/html; charset=UTF-8",
+      "new": "content-type: text/html"
+    },
+    {
+      "path": "/llc-ein",
+      "check": "header-changed",
+      "severity": "warning",
+      "old": "strict-transport-security: max-age=31536000; includeSubDomains; preload",
+      "new": "strict-transport-security: max-age=31536000"
+    },
+    {
+      "path": "/apply-for-ein",
+      "check": "header-missing",
+      "severity": "warning",
+      "old": "content-type: text/plain; charset=utf-8",
+      "new": "content-type: (missing)"
+    },
+    {
+      "path": "/ein",
+      "check": "header-missing",
+      "severity": "warning",
+      "old": "content-security-policy: (missing)",
+      "new": "content-security-policy: default-src 'self'; style-src 'self'; img-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"
+    },
+    {
+      "path": "/ein",
+      "check": "header-missing",
+      "severity": "warning",
+      "old": "content-type: text/plain",
+      "new": "content-type: (missing)"
+    },
+    {
+      "path": "/ein",
+      "check": "header-missing",
+      "severity": "warning",
+      "old": "referrer-policy: (missing)",
+      "new": "referrer-policy: no-referrer"
+    },
+    {
+      "path": "/ein",
+      "check": "header-missing",
+      "severity": "warning",
+      "old": "x-frame-options: (missing)",
+      "new": "x-frame-options: DENY"
+    },
+    {
+      "path": "/estimated-tax-dates",
+      "check": "header-missing",
+      "severity": "warning",
+      "old": "content-type: text/plain; charset=utf-8",
+      "new": "content-type: (missing)"
+    },
+    {
+      "path": "/library/sample",
+      "check": "header-missing",
+      "severity": "warning",
+      "old": "content-security-policy: (missing)",
+      "new": "content-security-policy: default-src 'self'; style-src 'self'; img-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"
+    },
+    {
+      "path": "/library/sample",
+      "check": "header-missing",
+      "severity": "warning",
+      "old": "content-type: text/plain",
+      "new": "content-type: (missing)"
+    },
+    {
+      "path": "/library/sample",
+      "check": "header-missing",
+      "severity": "warning",
+      "old": "referrer-policy: (missing)",
+      "new": "referrer-policy: no-referrer"
+    },
+    {
+      "path": "/library/sample",
+      "check": "header-missing",
+      "severity": "warning",
+      "old": "x-frame-options: (missing)",
+      "new": "x-frame-options: DENY"
+    }
+  ]
+}
