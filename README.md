@@ -2,9 +2,21 @@
 
 `cfmt` checks that a site on a new origin still matches the site it is leaving. `cfmt verify` is the parity verifier. `cfmt convert` turns Netlify and Vercel rules into Cloudflare Workers static-asset `_redirects` and `_headers`, and every redirect it writes has an explicit status code.
 
-The project home is [AIKitLLC/cf-migration-toolkit](https://github.com/AIKitLLC/cf-migration-toolkit).
+The project home is [AIKitLLC/cf-migration-toolkit-public](https://github.com/AIKitLLC/cf-migration-toolkit-public).
 
 License: [MIT](LICENSE)
+
+## Need a second pair of eyes? Audit A
+
+Want us to run the parity check on your migration and explain the findings? **Audit A** is a fixed-price migration audit from AI Kit LLC.
+
+- **Price:** $199
+- Request a refund within 5 business days of receiving your report. That window starts when we deliver the Audit report, and the refund is the full $199.
+- We also refund the full $199 if the report hasn't reached you within 5 business days.
+
+[Request Audit A](https://ai-kit.net/cloudflare/audit?utm_source=github&utm_medium=readme&utm_campaign=cf-migration-toolkit)
+
+The toolkit stays free and MIT-licensed whether or not you buy an audit.
 
 ## What the verifier compares
 
